@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body  class="app_back">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+		
+		<div class="navbar navbar-fixed-top">
+		  <div class="container">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="index.html"><img width="100px" src="img/ShottyLogo.png" /></a>
+			</div>
+
+		  </div>
+		</div>
+
+    
+      <div class="container" id="lgnbtn_container">
+		<div class="row">
+			<div class="span6" style="text-align:center">
+				<!--<a href="needaride.html" class="btn btn-primary btn-lg dashboard-btn"><img src="img/glyphicons_005_car.png" /><br /><br /> I Need a Ride</a> -->
+				<button class="btn btn-default btn-lg dashboard-btn" data-toggle="modal" data-target="#myModal"><img src="img/glyphicons_005_car.png" /><br /><br /> I Need a Ride</button>
+				<a href="#" class="btn btn-default btn-lg dashboard-btn"><img src="img/glyphicons_006_user_add.png" /><br /><br /> I Need a Passenger</a>
+			</div>
+		</div>
+        
+      </div>
+
+	
+
+      <footer>
+
+      </footer>
+    </div> <!-- /container -->        
+	
+	<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Need a Ride?</h4>
+      </div>
+      <div class="modal-body">
+		<form class="form-horizontal">
+				<div class="form-group">
+					<label class="col-sm-3 control-label" for="inputWhere">Where?</label>
+					<div class="col-sm-9">
+					<input type="text" id="inputWhere" class="form-control" placeholder="City you are heading to">
+				</div>
+			</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label" for="inputWhen">When?</label>
+					<div class="col-sm-9">
+					<input type="text" id="inputWhen" class="form-control" placeholder="Date of Departure">
+					<label class="checkbox-inline">
+					  <input type="checkbox" id="inlineCheckbox1" value="option1"> Now!
+					</label>
+				</div>
+			</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label" for="inputPassengers">How Many?</label>
+					<div class="col-sm-9">
+					<input type="text" id="inputPassengers" class="form-control" placeholder="Anybody riding Bitch?">
+				</div>
+			</div>
+		</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <a href="needaride.html" type="button" class="btn btn-primary">Find a Ride</a>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+		
+		<script type='application/javascript' src='../js/fastclick.js'></script>
+		<script>
+			window.addEventListener('load', function() {
+			FastClick.attach(document.body);
+			}, false);
+		</script>
+
+        <!--<script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>-->
+    </body>
+</html>

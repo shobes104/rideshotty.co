@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Login to Ride Shotty</title>
+        <meta name="description" content="Login to Ride Shotty">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+<body>
+<style type="text/css">
+            body {
+
+    /*background: url(img/loginRoad.jpg) no-repeat center center;*/
+		background-image:url('img/loginRoad.jpg');
+		background-color: #5BF;
+		background-size: 250%;
+		background-position: top center;
+		background-repeat:repeat;
+		/*background-attachment:fixed;*/
+
+}
+
+
+.middle {
+    vertical-align: middle;
+}
+
+.logo {
+    margin: 15% auto 1em auto;
+    display: block;
+    width: 100%;
+}
+
+.not-member {
+    background: #eee;
+    color: #333;
+    margin: auto;
+    display: block;
+}
+
+@media (min-width: 900px) {
+    .logo{
+        max-width: 50%;
+    }
+    .btn {
+        max-width: 50%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    /*logo {
+        margin-top: 30%;
+    }*/
+}
+
+
+    </style>
+</head>
+
+<body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12" style="margin-right: 5px; margin-left: 5px;">
+                    <div style="position: relative;">
+                        <img src="img/logoWhite.png" class="logo">
+                    </div>
+                    <a href="dashboard.html" type="button" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-user" style="padding-right: 5px;"></span>Login with Facebook</a> 
+                </div>
+            </div>
+        </div> 
+
+
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+		
+		<script type='application/javascript' src='../js/fastclick.js'></script>
+		<script>
+			window.addEventListener('load', function() {
+			FastClick.attach(document.body);
+			}, false);
+		</script>
+
+        <!--<script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>-->
+    </body>
+</html>

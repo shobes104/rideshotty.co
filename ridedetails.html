@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body  class="app_back">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="dashboard.html"><img width="100px" src="img/ShottyLogo.png" /></a>
+        </div>
+
+      </div>
+    </div>
+
+	  <div class="container-fluid">
+		<!--<div class="left-inner-addon search-box">
+			<input id="search-box" type="text" class="form-control" placeholder="Filter"/>
+		</div>-->
+		  
+	  </div>
+      <div class="container" id="ride_container">
+	  <div class="row" style="20px;">
+			<div class="span6" style="text-align:center"><div id="profilepic"></div></div><div class="span6"></div>
+			<div class="span6" style="text-align:center">Name: <span id="name_box"></span></div>
+			<div class="span6" style="text-align:center">Where: <span id="where_box"></span> </div>
+			<div class="span6" style="text-align:center">When: <span id="when_box"></span></div>
+			<div class="panel-group" id="accordion">
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+					  Reviews
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse in">
+				  <div class="panel-body">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+					  Trip Description
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse">
+				  <div class="panel-body">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+					  Route
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse">
+				  <div class="panel-body">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				  </div>
+				</div>
+			  </div>
+			</div>
+
+			<!--<div class="form-group">
+				Note: <span id="note_box"></span>
+			</div>
+			<div class="form-group">
+				Route: <span id="route_box"></span>
+			</div>-->
+			<br />
+			<div class="span6" style="text-align:center">
+			<a class="btn btn-primary btn-lg" style="margin-bottom: 5px;" href="txtme.php">Yes, I want to Ride Shotty!</a>
+			<a href="needaride.html" class="btn btn-lg btn-default" style="margin-bottom: 5px;">No Thanks</a>
+			
+			</div>
+      </div>
+	  
+	  <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Awesome!</h4>
+      </div>
+      <div class="modal-body">
+		<form class="form-horizontal">
+				We have let the Driver know you are ready to ride Shotty!  <br />The driver will confirm with you ASAP.
+		</form>
+      </div>
+      <div class="modal-footer">
+        <a href="dashboard.html" type="button" class="btn btn-primary">OK</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <footer>
+
+      </footer>
+    </div> <!-- /container -->        
+
+		 <script src="js/vendor/jquery-1.10.1.min.js"></script>
+		 
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/rides.js"></script>
+		<script>
+		$( document ).ready(function() {
+			getRide(querystring('id'));
+		});
+		</script>
+		
+		<script>
+		
+		
+		function onPositionUpdate(position)
+        {
+            var lat = position.coords.latitude;
+            var lng = position.coords.longitude;
+            //alert("Current position: " + lat + " " + lng);
+			$('#search-box').val("Lancaster, Pa");
+        }
+
+        if(navigator.geolocation)
+            navigator.geolocation.getCurrentPosition(onPositionUpdate);
+        else
+            alert("navigator.geolocation is not available");
+		</script>
+		
+		<script type='application/javascript' src='../js/fastclick.js'></script>
+		<script>
+			window.addEventListener('load', function() {
+			FastClick.attach(document.body);
+			}, false);
+		</script>
+
+        <!--<script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>-->
+    </body>
+</html>
